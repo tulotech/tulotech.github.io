@@ -1,10 +1,13 @@
-// Agregar animación de aparición a las secciones
-window.addEventListener('scroll', function() {
-    const sections = document.querySelectorAll('.section');
-    const scrollPosition = window.scrollY + window.innerHeight;
-    sections.forEach(function(section) {
-        if (scrollPosition > section.offsetTop + 100) {
-            section.classList.add('visible');
-        }
-    });
+// Manejar el envío del formulario
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita el envío del formulario
+
+    // Muestra un mensaje de confirmación
+    const respuesta = document.getElementById('respuesta');
+    respuesta.style.display = 'block';
+    respuesta.textContent = '¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.';
+
+    // Resetea el formulario
+    this.reset();
 });
+

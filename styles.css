@@ -107,6 +107,7 @@ body {
 }
 
 
+
 /* Servicios */
 .servicios {
     padding: 50px 0;
@@ -225,7 +226,7 @@ input, textarea {
 .project-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #0071e3;
+    background-color: #333333;
     color: #fff;
     font-weight: bold;
     border-radius: 5px;
@@ -234,7 +235,7 @@ input, textarea {
 }
 
 .project-link:hover {
-    background-color: #005bb5;
+    background-color: #000000;
 }
 
 .servicios {
