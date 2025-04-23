@@ -93,20 +93,22 @@
             gap: 15px;
         }
 
-        .nav-links li {
-            display: inline;
-        }
-
         .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
+    color: white; /* Siempre blanco */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    /* Efecto glow suave en blanco, sin cambiar color ni subrayar */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
 
         /* Efecto de animación en los enlaces */
         .nav-links a:hover {
-            color: #f39c12;
-            text-decoration: underline;
+            color: #ffffff;
         }
     </style>
 </head>
@@ -121,8 +123,8 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#sobre">Sobre mí</a></li>
-                <li><a href="#paginas-web">Páginas Web</a></li>
+                <li><a href="#sobre_mi">Sobre mí</a></li>
+                <li><a href="#paginas_web">Páginas Web</a></li>
             </ul>
         </nav>
     </div>
@@ -162,20 +164,20 @@
         </div>
     </section>
 
-    <!-- Sección de páginas web -->
-    <section id="paginas-web" class="section paginas-web">
-        <div class="container">
-            <h2 class="section-title">Páginas Web Realizadas</h2>
-            <div class="project-cards">
-                <div class="project-card">
-                    <img src="pagina1.png" alt="Proyecto 1" class="project-image">
-                    <h3 class="project-title">Portfolio Creativo</h3>
-                    <p class="project-description">Maqueta de pagina web</p>
-                    <a href="https://tulotech.github.io/Portfolio-Creativo/" target="_blank" class="project-link">Visitar Sitio</a>
+        <!-- Sección de páginas web -->
+        <section id="paginas-web" class="section paginas-web">
+            <div class="container">
+                <h2 class="section-title">Páginas Web Realizadas</h2>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <img src="pagina1.png" alt="Proyecto 1" class="project-image">
+                        <h3 class="project-title">Portfolio Creativo</h3>
+                        <p class="project-description">Maqueta de pagina web</p>
+                        <a href="https://tulotech.github.io/Portfolio-Creativo/" target="_blank" class="project-link">Visitar Sitio</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     <!-- Sección sobre mí -->
     <section id="sobre" class="section sobre">
@@ -191,7 +193,7 @@
     <!-- Pie de página con iconos sociales -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 TuloTech. Todos los derechos reservados.</p>
+            <p>&copy; 2025 TuloTech. Todos los derechos reservados.</p>
             <div class="social-icons">
                 <a href="mailto:tulotechmail@gmail.com" target="_blank" title="Correo">
                     <i class="fas fa-envelope"></i> <!-- Icono de correo -->
@@ -199,8 +201,8 @@
                 <a href="https://www.instagram.com/tulotech/" target="_blank" title="Instagram">
                     <i class="fab fa-instagram"></i> <!-- Icono de Instagram -->
                 </a>
-                <a href="https://www.linkedin.com/in/tulotech/" target="_blank" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i> <!-- Icono de LinkedIn -->
+                <a href="https://www.freelancer.com/u/santisanchezzz" target="_blank" title="Freelancer">
+                    <i class="fas fa-dove"></i> <!-- Ícono de un pájaro -->
                 </a>
             </div>
         </div>
